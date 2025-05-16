@@ -2,39 +2,39 @@ import java.util.Scanner;
 
 public class Switchtask {
     public static void main(String arr[]) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner obj = new Scanner(System.in);
 
         System.out.println("Choose a category: fruits or vegetables");
-        String choice = scanner.nextLine();
+        String choice = obj.nextLine();
 
         switch (choice) {
             case "fruits":
                 System.out.println("Choose a fruit: banana, orange, mango");
-                String fruit = scanner.nextLine();
+                String fruit = obj.nextLine();
 
                 switch (fruit) {
-                    case "banana":System.out.println("You selected Banana.");
+                    case "banana":System.out.println(" Banana.");
                         break;
-                    case "orange":System.out.println("You selected Orange.");
+                    case "orange":System.out.println(" Orange.");
                         break;
-                    case "mango":System.out.println("You selected Mango.");
+                    case "mango":System.out.println("Mango.");
                         break;
-                    default:System.out.println("Invalid fruit selection.");
+                    default:System.out.println("Invalid");
                 }
                 break;
 
             case "vegetables":
                 System.out.println("Choose a vegetable: carrot, potato, spinach");
-                String vegetable = scanner.nextLine();
+                String vegetable = obj.nextLine();
 
                 switch (vegetable) {
-                    case "carrot":System.out.println("You selected Carrot.");
+                    case "carrot":System.out.println("Carrot.");
                         break;
-                    case "potato":System.out.println("You selected Potato.");
+                    case "potato":System.out.println(" Potato.");
                         break;
-                    case "spinach":System.out.println("You selected Spinach.");
+                    case "spinach":System.out.println(" Spinach.");
                         break;
-                    default:System.out.println("Invalid vegetable.");
+                    default:System.out.println("Invalid ");
                 }
                 break;
                     default:System.out.println("Invalid.");
