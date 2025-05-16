@@ -1,55 +1,48 @@
 import java.util.Scanner;
 
 public class Switchtask {
-    public static void main(String[] args) {
+    public static void main(String arr[]) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Choose a category: fruits or vegetables");
-        String category = scanner.nextLine().toLowerCase();
+        String choice = scanner.nextLine();
 
-        switch (category) {
+        switch (choice) {
             case "fruits":
                 System.out.println("Choose a fruit: banana, orange, mango");
-                String fruit = scanner.nextLine().toLowerCase();
+                String fruit = scanner.nextLine();
 
                 switch (fruit) {
-                    case "banana":
-                        System.out.println("You selected Banana. Rich in potassium!");
+                    case "banana":System.out.println("You selected Banana.");
                         break;
-                    case "orange":
-                        System.out.println("You selected Orange. Great source of Vitamin C!");
+                    case "orange":System.out.println("You selected Orange.");
                         break;
-                    case "mango":
-                        System.out.println("You selected Mango. King of fruits!");
+                    case "mango":System.out.println("You selected Mango.");
                         break;
-                    default:
-                        System.out.println("Invalid fruit selection.");
+                    default:System.out.println("Invalid fruit selection.");
                 }
                 break;
 
             case "vegetables":
                 System.out.println("Choose a vegetable: carrot, potato, spinach");
-                String vegetable = scanner.nextLine().toLowerCase();
+                String vegetable = scanner.nextLine();
 
                 switch (vegetable) {
-                    case "carrot":
-                        System.out.println("You selected Carrot. Good for eyesight!");
+                    case "carrot":System.out.println("You selected Carrot.");
                         break;
-                    case "potato":
-                        System.out.println("You selected Potato. Energy booster!");
+                    case "potato":System.out.println("You selected Potato.");
                         break;
-                    case "spinach":
-                        System.out.println("You selected Spinach. Full of iron!");
+                    case "spinach":System.out.println("You selected Spinach.");
                         break;
-                    default:
-                        System.out.println("Invalid vegetable selection.");
+                    default:System.out.println("Invalid vegetable.");
                 }
                 break;
-
-            default:
-                System.out.println("Invalid category selection.");
+                    default:System.out.println("Invalid.");
         }
-
-        scanner.close();
     }
 }
+
+
+
+
+
