@@ -154,20 +154,43 @@ public class Loops {
 
 //palindrom
 
-int number = 121;
-int palindrom = number;
-int rev = 0;
-while(number!=0){
-    int digit = number%10;
-    rev = rev*10+digit;
-    number = number/10;
-}
-if (palindrom==rev)
-    System.out.print("palindrom");
-else{
-        System.out.print(" not palindrom");
+// int number = 121;
+// int palindrom = number;
+// int rev = 0;
+// while(number!=0){
+//     int digit = number%10;
+//     rev = rev*10+digit;
+//     number = number/10;
+// }
+// if (palindrom==rev)
+//     System.out.print("palindrom");
+// else{
+//         System.out.print(" not palindrom");
+// }
 
-}
+
+
+
+//AP SERIES
+// int a =1;
+// int n=6;
+// int d=2;
+// int nterm=0;
+// for (int i=a;i<=n;i++){
+//    nterm =  a+i*d;
+//    System.out.println(nterm);
+// }
+
+
+// int a =1;
+// int n=5;
+// int d=2;
+// int nterm=0;
+// for (int i=a;i<=n;i++){
+//    nterm =  a+(n-1)*d;
+// }
+//    System.out.println(nterm);
+
 
 
 
