@@ -231,29 +231,108 @@ public class Loops {
 
 
 //fabonacci series
-int i=1;
-int n=5;
- int first = 1;
- int second = 2;
-while(i<=n)
-{
- if(i==1){
-    System.out.println(i);
- i++;
- continue;
- }
- if(i==2){
-      System.out.println(i);
- i++;
-continue;
- }
- int next = first+second;
- first=second;
- second=next;
- i++;
-System.out.println(next);
-}
+// int i=1;
+// int n=5;
+//  int first = 1;
+//  int second = 2;
+// while(i<=n)
+// {
+//  if(i==1){
+//     System.out.println(i);
+//  i++;
+//  continue;
+//  }
+//  if(i==2){
+//       System.out.println(i);
+//  i++;
+// continue;
+//  }
+//  int next = first+second;
+//  first=second;
+//  second=next;
+//  i++;
+// System.out.println(next);
+// }
 
+
+
+
+//pattern
+//right angle traingle
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c<=r)
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+//inverted left
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c>=r)
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+
+//left angle triangle
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c>=6-r )
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+
+//inverted right angle
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c<=6-r )
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+
+//pattern
+ for(int r=1;r<=5;++r){
+    for(int c=1;c<=5;++c){
+        if()
+        {
+            System.out.print("*");
+        }
+        else{
+         System.out.print(" ");
+        }
+    }
+    System.out.println();
+ }
 
 
 
