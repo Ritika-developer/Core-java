@@ -321,11 +321,94 @@ public class Loops {
 
 
 //pattern
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=9;++c){
+//         if(c>=6-r && c<=4+r)
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+//lower parmid
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=9;++c){
+//         if(c>=r && c<=10-r)
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+
+//daimond
+// int a=0;
+//  for(int r=1;r<=9;++r){
+//     a=(r<=5)?++a:--a;
+//     for(int c=1;c<=9;++c){
+
+//         if(c>=6-a && c<=4+a)
+//         {
+//             System.out.print("*");
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+//1-15
+// int a=0;
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c<=r)
+//         {
+//             System.out.print(++a);
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+//11
+// int a=0;
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c<=r)
+//         {
+//             System.out.print(r);
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
+
+
+//abcd
+char a='a';
  for(int r=1;r<=5;++r){
-    for(int c=1;c<=9;++c){
-        if(c>=6-r && c<=4+r)
+    for(int c=1;c<=5;++c){
+        if(c<=r)
         {
-            System.out.print("*");
+            // System.out.print((char)(r+64));
+            System.out.print((char)(r+96));
         }
         else{
          System.out.print(" ");
@@ -333,8 +416,6 @@ public class Loops {
     }
     System.out.println();
  }
-
-
 
 
     }
