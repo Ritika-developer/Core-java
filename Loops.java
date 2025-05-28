@@ -10,7 +10,7 @@ public class Loops {
 
 
 //sum of n natural number
-// int n = 3;
+// int n = 7;
 // int res =0 ;
 // for(int i=1; i<=n;i++){
 //      res = res + i;
@@ -75,9 +75,9 @@ public class Loops {
 // int res = 0;
 // while(number!=0){
 //     int digit = number%10;
-//     if (res<digit)
+//     if (res<digit){
 //         res=digit;
-//     System.out.println(digit);
+// }
 //     number = number/10;
 // }
 //     System.out.print(res);
@@ -111,8 +111,6 @@ public class Loops {
 //         System.out.print(" not a prime number");
 // }
 
-
-
 //amstrong
 // int number = 153;
 // int org = number;
@@ -127,8 +125,6 @@ public class Loops {
 // else{
 //     System.out.print(" not arms");
 // }
-
-
 
 
 // int number = 153;
@@ -169,8 +165,6 @@ public class Loops {
 // }
 
 
-
-
 //AP SERIES
 // int a =1;
 // int n=6;
@@ -190,8 +184,6 @@ public class Loops {
 //    nterm =  a+(n-1)*d;
 // }
 //    System.out.println(nterm);
-
-
 
 
 //gp 
@@ -402,20 +394,20 @@ public class Loops {
 
 
 //abcd
-char a='a';
- for(int r=1;r<=5;++r){
-    for(int c=1;c<=5;++c){
-        if(c<=r)
-        {
-            // System.out.print((char)(r+64));
-            System.out.print((char)(r+96));
-        }
-        else{
-         System.out.print(" ");
-        }
-    }
-    System.out.println();
- }
+// char a='a';
+//  for(int r=1;r<=5;++r){
+//     for(int c=1;c<=5;++c){
+//         if(c<=r)
+//         {
+//             // System.out.print((char)(r+64));
+//             System.out.print((char)(r+96));
+//         }
+//         else{
+//          System.out.print(" ");
+//         }
+//     }
+//     System.out.println();
+//  }
 
 
     }

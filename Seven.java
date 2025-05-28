@@ -12,6 +12,9 @@ public static void main(String ar[])
           //string :- pool,object
 
 
+
+
+//upper case and lower case
             // Scanner obj = new Scanner (System.in);
             // char input;
             // System.out.println("enter a char");
@@ -22,7 +25,8 @@ public static void main(String ar[])
             // else if(input>='a' && input<='z'){
             //     System.out.println("lowercase");
             // }
-          
+
+
             // else{
             //     System.out.println("Invalid");
             // }

@@ -3,12 +3,13 @@ public class Four
 {
 public static void main(String ar[])
     {
-// int c=2;
-// int d=3;
+// int c=4;
+// int d=5;
 
 // System.out.println(c&d);
 // System.out.println(c|d);
-// System.out.println(c^d);
+// System.out.println(c^d);  
+//   :- xor
 
 //next
 
