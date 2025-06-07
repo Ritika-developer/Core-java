@@ -152,15 +152,15 @@ public static void main (String ar[]){
 
 
 //minimum value
-int arr[] = {1,4,2,5,6,3};
-int n = arr.length;
-int max = arr[0];
-for(int i = 0 ; i<n ;i++){
-if(arr[i]>max){
-    max = arr[i];
-}
-}
-System.out.print(max);
+// int arr[] = {1,4,2,5,6,3};
+// int n = arr.length;
+// int max = arr[0];
+// for(int i = 0 ; i<n ;i++){
+// if(arr[i]>max){
+//     max = arr[i];
+// }
+// }
+// System.out.print(max);
 
 
 
@@ -179,6 +179,101 @@ System.out.print(max);
 // for(int i=0;i<1;i++){
 //         System.out.print(arr[i]);
 // }
+
+
+
+
+//move zero in last 
+// int arr[] = {1,0,3,0,1};
+// int n = arr.length;
+// int j =0;
+// for(int i = 0 ; i<n ;i++){
+// if(arr[i]!=0){
+//     int temp = arr[i];
+//     arr[i] = arr[j] ;
+//     arr[j] = temp;
+//     j++;
+// }
+// }
+// for(int arr1 : arr){
+//     System.out.print(arr1);
+//     }
+
+
+
+// second largest
+// int arr[] = {1,0,3,0,1};
+// int n = arr.length;
+
+// for(int i = 0 ; i<n ;i++){
+//     for(int j=i+1 ; j<n ; j++){
+// if(arr[i]<arr[j]){
+//     int temp = arr[i];
+//     arr[i] = arr[j] ;
+//     arr[j] = temp;
+// }
+// }
+// }
+// for(int i=1 ;i<2;i++){
+//     System.out.print(arr[i]);
+// }
+
+
+
+//duplicate array
+// int arr[] = {1,2,3,2,1};
+// int n= arr.length;
+// for(int i = 0 ; i<n ;i++){
+//     for(int j=i+1 ; j<n ; j++){
+//         if(arr[i]==arr[j]){
+//             arr[j]=-1;
+//         }
+//     }
+//     }
+// for(int i=0 ;i<n;i++){
+//     System.out.print(arr[i]);
+// }
+
+
+
+//unique
+// int arr[] = {1,2,3,2,1};
+// int n= arr.length;
+// for(int i = 0 ; i<n ;i++){
+//     boolean check = false;
+//     for(int j=i+1 ; j<n ; j++){
+//         if(arr[i]==arr[j]){
+//             check = true;
+//             arr[j]=-1;
+//         }
+//     }
+    
+// if(check==false  &&   arr[i]!=-1){
+//     System.out.print(arr[i]);
+// }
+// }
+
+
+
+//frequency
+int arr[] = {1,2,3,2,1};
+int n = arr.length;
+int counter = 0;
+for(int i=0 ; i<n ;i++){
+if (arr[i]!= -1){
+    counter =1;
+}
+    for(int j=i+1 ; j<n ; j++){
+        if(arr[i]==arr[j]){
+            counter++;
+            arr[j] =  -1;
+        }
+    }
+            System.out.println(arr[i]  + " is " + counter); 
+}
+
+
+
 
 
 
