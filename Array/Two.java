@@ -256,21 +256,75 @@ public static void main (String ar[]){
 
 
 //frequency
-int arr[] = {1,2,3,2,1};
+// int arr[] = {1,2,3,2,1};
+// int n = arr.length;
+// int counter = 0;
+// for(int i=0 ; i<n ;i++){
+// if (arr[i]!= -1){
+//     counter =1;
+// }
+//     for(int j=i+1 ; j<n ; j++){
+//         if(arr[i]==arr[j]){
+//             counter++;
+//             arr[j] =  -1;
+//         }
+//     }
+//             System.out.println(arr[i]  + " is " + counter); 
+// }
+
+
+
+
+
+// int arr[] = {5,3,6,3,4,2};
+// int k = 2;
+// for(int i = 0 ; i<k ; i++){
+//     for(int j=i+1 ; j<6 ;j++){
+//         if(arr[j]>arr[i]){
+//             int temp  = arr[j];
+//             arr[j] = arr[i];
+//             arr[i] = temp;
+//         }
+//     }
+// }
+// for(int i=1  ; i<k ; i++){
+//     System.out.print(arr[i]);
+// }
+
+
+
+// sir ka logic second largest digit
+// int max = 0 ;
+// for(int i=0 ;i<5 ;i++){
+//     if(arr[i]>mx){
+//         max = arr[i];
+//     }
+// }
+// sop(max)
+// for(int i=0 ;i<5 ;i++){
+//     if(arr[i]>mx && arr[i]!=max){
+//         smax = arr[i];
+//     }
+// }
+// sop(smax)
+
+
+//move zero at last
+int arr[] = {10,0,9,0,5};
 int n = arr.length;
-int counter = 0;
-for(int i=0 ; i<n ;i++){
-if (arr[i]!= -1){
-    counter =1;
+int j =0;
+for(int i = 0 ; i<n ;i++){
+if(arr[i]!=0){
+    arr[j] = arr[i] ;
+    j++;
 }
-    for(int j=i+1 ; j<n ; j++){
-        if(arr[i]==arr[j]){
-            counter++;
-            arr[j] =  -1;
-        }
+}
+for(int i=j ; i<n ; i++){
+    arr[i]=0;
+}
+for(int arr1 : arr){
+    System.out.print(arr1 + " ");
     }
-            System.out.println(arr[i]  + " is " + counter); 
-}
 
 
 
@@ -284,6 +338,19 @@ if (arr[i]!= -1){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 }
     }
