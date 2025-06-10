@@ -30,7 +30,6 @@ public static void main (String ar[]){
 
 
 //reverse of arr
-
 // Scanner obj = new Scanner(System.in);
 // System.out.print("enter the size of array ");
 // int size = obj.nextInt();
@@ -78,8 +77,9 @@ public static void main (String ar[]){
 
 
 
-//asending order
 
+
+//asending order
 // int arr[] = {1,4,2,5,6,3};
 // int n = arr.length;
 // for(int i = 0 ; i<n ;i++){
@@ -93,21 +93,6 @@ public static void main (String ar[]){
 //     System.out.print(arr[i]);
 // }
 
-
-
-//2 way
-// int arr[] = {1,4,2,5,6,3};
-// int n = arr.length;
-// for(int i = 0 ; i<n-1 ;i++){
-//     for(int j = i+1 ;j<n ;j++){
-//         if(arr[i]>arr[j]){
-//         int temp = arr[i];
-//         arr[i] = arr[j];
-//         arr[j] = temp;
-//         }
-//     }
-//     System.out.print(arr[i]);
-// }
 
 
 //sir ka logic
@@ -151,7 +136,7 @@ public static void main (String ar[]){
 
 
 
-//minimum value
+//maximum value
 // int arr[] = {1,4,2,5,6,3};
 // int n = arr.length;
 // int max = arr[0];
@@ -181,6 +166,14 @@ public static void main (String ar[]){
 // }
 
 
+// int mx = 0;
+// int arr[]={1,3,4,17,15};
+// for( int i=0;i<5; i++){
+//     if(arr[i]>mx){
+//         mx=arr[i];
+//     }
+// }
+// System.out.print(mx);
 
 
 //move zero in last 
@@ -199,6 +192,24 @@ public static void main (String ar[]){
 //     System.out.print(arr1);
 //     }
 
+
+
+//move zero at last
+// int arr[] = {10,0,9,0,5};
+// int n = arr.length;
+// int j =0;
+// for(int i = 0 ; i<n ;i++){
+// if(arr[i]!=0){
+//     arr[j] = arr[i] ;
+//     j++;
+// }
+// }
+// for(int i=j ; i<n ; i++){
+//     arr[i]=0;
+// }
+// for(int arr1 : arr){
+//     System.out.print(arr1 + " ");
+//     }
 
 
 // second largest
@@ -220,6 +231,45 @@ public static void main (String ar[]){
 
 
 
+// sir ka logic second largest digit
+// int arr[]={9,6,4,8,7,2};
+// int n= arr.length;
+// int max = arr[0] ;
+// int smax = 0;
+// for(int i=0 ;i<n ;i++){
+//     if(arr[i]>max){
+//         max = arr[i];
+//     }
+// }
+// System.out.print(max);
+
+// for(int i=0 ;i<n ;i++){
+//     if(arr[i]>smax && arr[i]!=max){
+//         smax = arr[i];
+//     }
+// }
+//        System.out.print(smax);
+
+
+
+// int arr[] = {5,3,6,3,4,2};
+// int k = 2;
+// for(int i = 0 ; i<k ; i++){
+//     for(int j=i+1 ; j<6 ;j++){
+//         if(arr[j]>arr[i]){
+//             int temp  = arr[j];
+//             arr[j] = arr[i];
+//             arr[i] = temp;
+//         }
+//     }
+// }
+// System.out.print(arr[k-1]);
+
+
+
+
+
+
 //duplicate array
 // int arr[] = {1,2,3,2,1};
 // int n= arr.length;
@@ -234,8 +284,23 @@ public static void main (String ar[]){
 //     System.out.print(arr[i]);
 // }
 
+//duplicate // remove dulicate
+// int arr[]={3,2,1,3,2};
+// for(int i=0 ; i<5 ; i++){
+//     boolean dup = false;
+//     for(int j = i+1 ; j<5 ; j++){
+//         if(arr[i]==arr[j] && arr[i]!=-1){
+//             dup = true;
+//             arr[j] = -1;
+//         }
+//     }
+//     if(dup = true && arr[i]!=-1){
+//         System.out.println(arr[i]);
+//     }
+// }
 
 
+//unique :-     if(dup != true && arr[i]!=-1){
 //unique
 // int arr[] = {1,2,3,2,1};
 // int n= arr.length;
@@ -273,67 +338,45 @@ public static void main (String ar[]){
 // }
 
 
-
-
-
-// int arr[] = {5,3,6,3,4,2};
-// int k = 2;
-// for(int i = 0 ; i<k ; i++){
-//     for(int j=i+1 ; j<6 ;j++){
-//         if(arr[j]>arr[i]){
-//             int temp  = arr[j];
-//             arr[j] = arr[i];
-//             arr[i] = temp;
-//         }
+// int arr[] = {10,11,23,10,9,10};
+// int n  =arr.length;
+// for(int i=0;i<n;i++){
+//      int count = 1;
+//     for(int j=i+1; j<n ; j++){
+// if(arr[i]==arr[j]){
+//     count++;
+//     arr[j]=-1;
+// }
+//     }
+//     if(arr[i]!=-1){
+//     System.out.println(arr[i] + "is" + count);
 //     }
 // }
-// for(int i=1  ; i<k ; i++){
-//     System.out.print(arr[i]);
-// }
 
 
 
-// sir ka logic second largest digit
-// int max = 0 ;
-// for(int i=0 ;i<5 ;i++){
-//     if(arr[i]>mx){
-//         max = arr[i];
+
+//mising number in an array
+// int arr[]= {1,3,5,7,9};
+// int n = arr.length;
+// for(int i=0 ; i<n-1 ;i++){
+//     if(arr[i+1]-arr[i] >1){
+//         System.out.println(arr[i]+1);
 //     }
 // }
-// sop(max)
-// for(int i=0 ;i<5 ;i++){
-//     if(arr[i]>mx && arr[i]!=max){
-//         smax = arr[i];
-//     }
-// }
-// sop(smax)
 
 
-//move zero at last
-int arr[] = {10,0,9,0,5};
+// multiple missing number
+ 
+int arr[]= {1,3,7,9,18};
 int n = arr.length;
-int j =0;
-for(int i = 0 ; i<n ;i++){
-if(arr[i]!=0){
-    arr[j] = arr[i] ;
-    j++;
-}
-}
-for(int i=j ; i<n ; i++){
-    arr[i]=0;
-}
-for(int arr1 : arr){
-    System.out.print(arr1 + " ");
+for(int i=0 ; i<n-1 ;i++){
+    if(arr[i+1]-arr[i] >1){
+        for(int j=arr[i]+1 ; i<arr[i+1] ;j++){
+            System.out.println(j);
+        }
     }
-
-
-
-
-
-
-
-
-
+}
 
 
 
