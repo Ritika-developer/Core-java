@@ -60,3 +60,9 @@ public static void main (String ar[]){
     sumOfArray(arr);
     }
 }
+
+
+
+//hw:- sum of array 
+// reverse
+// pallindrom
