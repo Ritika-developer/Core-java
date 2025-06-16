@@ -109,32 +109,60 @@
 
 
 //pallindrom
-public class One {
-    public static boolean isPalindrome(int[] arr) {
-        int start = 0;
-        int end = arr.length - 1;
+// public class One {
+//     public static boolean isPalindrome(int[] arr) {
+//         int start = 0;
+//         int end = arr.length - 1;
 
-        while(start < end) {
-            if(arr[start] != arr[end]) {
-                return false; 
+//         while(start < end) {
+//             if(arr[start] != arr[end]) {
+//                 return false; 
+//             }
+//             start++;
+//             end--;
+//         }
+//                  return true; 
+//     }
+
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 2, 1};
+
+//         if(isPalindrome(arr)) {
+//             System.out.println("The array is a Palindrome");
+//         } else {
+//             System.out.println("The array is NOT a Palindrome");
+//         }
+//     }
+// }
+
+
+
+
+
+//asending
+public class One{
+static void arrinp(int arr[],int size){
+            Scanner obj = new Scanner(System.in);
+            for(int i=0;i<size;i++){
+                arr[i]=obj.nextInt();
             }
-            start++;
-            end--;
-        }
-                 return true; 
-    }
-
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 2, 1};
-
-        if(isPalindrome(arr)) {
-            System.out.println("The array is a Palindrome");
-        } else {
-            System.out.println("The array is NOT a Palindrome");
-        }
-    }
 }
 
+ static void display(int arr[]){
+    for(int arr1:arr){
+        System.out.print(arr1);
+    }
+}
+    
+    public static void main(String args[]){
+        Scanner obj = new Scanner(System.in);
+        int size;
+        size = obj.nextInt();
+        int arr[] = new int[size];
+        arrinp(arr,size);
+        display(arr);
+    }
+}
 
 
 //hw:- sum of array 
