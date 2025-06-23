@@ -486,7 +486,7 @@
 //     int n = arr.length;
 //     int feq[] = new int[n];
 //     for(int i =0 ; i<n ;i++){
-//         feq[i]  = -1;
+//         feq[i]  = -1;   
 //     }
 //     for(int i=0;i<n;i++){
 //         if(feq[i]!=-1)
