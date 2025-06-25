@@ -14,7 +14,7 @@
 class Two{
     String a;
     int b;
-    //default
+    //default 
     Two(){
        System.out.print("i am default constructor");
     }
