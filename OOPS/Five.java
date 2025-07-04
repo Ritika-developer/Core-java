@@ -33,6 +33,7 @@
 
 //inharitans
 //child parent ki karta h 
+//single level
 class Five{
     int a;
     String  b;
@@ -49,3 +50,28 @@ class Five{
     }
    }
 
+
+
+
+
+//multilevel
+// class Five{
+//     int a;
+//     String  b;
+// }
+
+// class Seven extends Five{
+
+// }
+//    class Eigth extends Seven{
+
+//     public static void main(String args[])
+//     {
+        
+//         Eigth obj =new Eigth();
+//         obj.a=10;
+//         obj.b="ritika";
+
+//         System.out.println(obj.a+" "+obj.b);
+//     }
+//    }
